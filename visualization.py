@@ -32,6 +32,7 @@ linestyles_dict = OrderedDict(
 
 # plotting all the VO trajectories
 def plot_route(gt, deep, sfm, sc, dfvo, c_gt='g', c_deep='r', c_sfm='b', c_sc='c', c_dfvo = 'k', avg1=None, avg2=None, avg3=None, avg4 = None):
+    #plot ground truth
     x_idx = 3
     y_idx = 5
     x = [v for v in gt[:, x_idx]]
@@ -39,24 +40,28 @@ def plot_route(gt, deep, sfm, sc, dfvo, c_gt='g', c_deep='r', c_sfm='b', c_sc='c
     plt.plot(x, y, color=c_gt, label='Ground Truth')
     # plt.scatter(x, y, color='b')
 
+    #plot DeepVO
     x = [v for v in deep[:, x_idx]]
     y = [v for v in deep[:, y_idx]]
     plt.plot(x, y, color=c_deep, linestyle=':', label='DeepVO')
     # plt.scatter(x, y, color='b')
     plt.gca().set_aspect('equal', adjustable='datalim')
 
+    #plot SfMLearner
     x = [v*1.9 for v in sfm[:, x_idx]]
     y = [v*1.9 for v in sfm[:, y_idx]]
     plt.plot(x, y, color=c_sfm, linestyle='--', label='SfMLearner')
     # plt.scatter(x, y, color='b')
     plt.gca().set_aspect('equal', adjustable='datalim')
 
+    #plot SC-SfMLearner
     x = [v*9 for v in sc[:, x_idx]]
     y = [v*9 for v in sc[:, y_idx]]
     plt.plot(x, y, color=c_sc, linestyle='-.', label='SC-SfMLearner')
     # plt.scatter(x, y, color='b')
     plt.gca().set_aspect('equal', adjustable='datalim')
 
+    #plot DF-VO
     x = [v for v in dfvo[:, x_idx]]
     y = [v for v in dfvo[:, y_idx]]
     plt.plot(x, y, color=c_dfvo, linestyle=linestyles_dict['densely dashdotted'], label='DF-VO')
@@ -119,7 +124,7 @@ for video in video_list:
     pose_result_path_sc = '{}sc_{}.txt'.format(predicted_result_dir, video)
     pose_result_path_dfvo = '{}dfvo_{}.txt'.format(predicted_result_dir, video)
 
-
+    # outputs error results: RMSE(rotation, translation)
     with open(pose_result_path_deep) as f_out_1:
         out = [l.split('\n')[0] for l in f_out_1.readlines()]
         for i, line in enumerate(out):
