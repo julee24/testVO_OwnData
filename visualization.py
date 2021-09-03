@@ -5,6 +5,7 @@ from params import par
 import math
 from collections import OrderedDict
 
+#change directory accordingly
 pose_GT_dir = 'KITTI/pose_GT/'
 #predicted_result_dir = '/home/jaun/Downloads/DeepVO-pytorch-master/KITTI/result/'
 predicted_result_dir = '/media/jaun/로컬 디스크/DeepVO-pytorch-master/KITTI/result/straightGlass_final/'
