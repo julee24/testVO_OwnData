@@ -1,7 +1,7 @@
 # testVO_OwnData
 Codes to help prepare your own datasets for testing VO algorithms.
 
-This was made to test and evaluate specifically four VO algorithms: DeepVO, SfMLearner, SC-SfMLearner, DF-VO
+This was made to test and evaluate specifically four VO algorithms: DeepVO, SfMLearner, SC-SfMLearner, DF-VO\
 Run on Ubuntu 18.04
 
 # Collect datasets:
