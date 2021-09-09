@@ -18,11 +18,11 @@ ground truth in rotation matrix format:
 
 # Visualization
 You can visualize all four VO algorithms together using ```visualization.py```\
-change the directories accordingly.\
+Change the directories accordingly.\
 Scale measurements hasn't been solved yet, will try to update later.
 
 The pose txt files for visualization need to be in euler form.\
-use the codes in ```tools``` and change the resulting poses of SC-SfMLearner,\
+Use the codes in ```tools``` and change the resulting poses of SC-SfMLearner,\
 SfMLearner, and DF-VO to euler forms(XYZ).\
 DeepVO algorithm itself should return the estimated poses in euler form.
 
