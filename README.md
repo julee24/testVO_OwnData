@@ -16,3 +16,13 @@ With the ARposes.txt created from ios_logger run the file ```groundTruth.py```to
 ground truth in rotation matrix format:
 ```r11, r12, r13, tx, r21, r22, r23, ty, r31, r32, r33, tz```
 
+# Visualization
+You can visualize all four VO algorithms together using ```visualization.py```\
+change the directories accordingly.\
+Scale measurements hasn't been solved yet, will try to update later.
+
+The pose txt files for visualization need to be in euler form.\
+use the codes in ```tools``` and change the resulting poses of SC-SfMLearner,\
+SfMLearner, and DF-VO to euler forms(XYZ).\
+DeepVO algorithm itself should return the estimated poses in euler form.
+
