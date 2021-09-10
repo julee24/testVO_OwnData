@@ -20,6 +20,7 @@ ground truth in rotation matrix format:
 You can visualize all four VO algorithms together using ```visualization.py```\
 Change the directories accordingly.\
 Scale measurements hasn't been solved yet, will try to update later.
+(You can use the codes in ```scale``` to manually adjust the scales of the estimated poses).
 
 The pose txt files for visualization need to be in euler form.\
 Use the codes in ```tools``` and change the resulting poses of SC-SfMLearner,\
