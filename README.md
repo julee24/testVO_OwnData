@@ -1,11 +1,11 @@
 # testVO_OwnData
-Codes to help prepare your own datasets for testing VO algorithms.
+Codes to help prepare your own datasets for testing deep learning-based VO algorithms.
 
 This was made to test and evaluate specifically four VO algorithms: DeepVO, SfMLearner, SC-SfMLearner, DF-VO\
 Run on Ubuntu 18.04
 
 # Collect datasets:
-You can use ios_logger by Varvar to collect datasets using ARKit VIO algorithms.
+You can use ios_logger by Varvar to collect datasets using ARKit VIO algorithm.
 
 Change the video Frames.m4v to continuous images using\
 ``` ffmpeg -i Frames.m4v image_2/%06d.png -hide_banner ```
