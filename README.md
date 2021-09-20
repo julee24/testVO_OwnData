@@ -10,7 +10,7 @@ You can use ios_logger by Varvar to collect datasets using ARKit VIO algorithm.
 Change the video Frames.m4v to continuous images using\
 ``` ffmpeg -i Frames.m4v image_2/%06d.png -hide_banner ```
 
-# Data Preparation:
+# Data preparation:
 Run ```resize_image.py``` to resize the images according to the KITTI dataset.
 
 With the ARposes.txt created from ios_logger, run the file ```groundTruth.py```to get the txt file of\
