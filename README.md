@@ -15,6 +15,8 @@ Run ```resize_image.py``` to resize the images according to the KITTI dataset.
 With the ARposes.txt created from ios_logger run the file ```groundTruth.py```to get the txt file of\
 ground truth in rotation matrix format:
 ```r11, r12, r13, tx, r21, r22, r23, ty, r31, r32, r33, tz```
+If you also need the timestamp, you can use ```quaternion2rotation_with_time.py``` in the tools directory.\
+```timestamp r11, r12, r13, tx, r21, r22, r23, ty, r31, r32, r33, tz```
 
 # Visualization
 You can visualize all four VO algorithms together using ```visualization.py```\
