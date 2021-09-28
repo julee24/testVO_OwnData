@@ -22,6 +22,7 @@ for line in input:
     
     
     #divide or multipy correct scale to the elements, x:float(linei[3]), y:float(linei[4]), z:float(linei[5])
+    
     translation_change = [float(linei[0]), float(linei[1]), float(linei[2]), float(linei[3]), float(linei[4]), float(linei[5])]
     #theta_change = [float(linei[2]), float(linei[1]),float(linei[0]), float(linei[3]), float(linei[4]), float(linei[5])]
 
