@@ -21,6 +21,7 @@ If you also need the timestamp, you can use ```quaternion2rotation_with_time.py`
 
 # Visualization
 You can visualize all four VO algorithms together using ```visualization.py```\
+If you want to visualize the results in 3D plot, use ```visualization_xyz.py```\
 Change the directories accordingly.\
 Scale measurements hasn't been solved yet, will try to update later.\
 (You can use the codes in ```scale``` to manually adjust the scales of the estimated poses).
