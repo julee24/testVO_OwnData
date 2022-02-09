@@ -7,7 +7,7 @@ Run on Ubuntu 18.04
 # Collect datasets:
 You can use ios_logger by Varvar to collect datasets using ARKit VIO algorithm.
 
-Change the video Frames.m4v to continuous images using\
+Change the video Frames.m4v to an image sequence using\
 ``` ffmpeg -i Frames.m4v image_2/%06d.png -hide_banner ```
 
 # Data preparation:
@@ -20,7 +20,7 @@ If you also need the timestamp, you can use ```quaternion2rotation_with_time.py`
 ```timestamp r11, r12, r13, tx, r21, r22, r23, ty, r31, r32, r33, tz```
 
 # Visualization
-You can visualize all four VO algorithms together using ```visualization.py```\
+You can visualize all four VO algorithms at once using ```visualization.py```\
 If you want to visualize the results in 3D plot, use ```visualization_xyz.py```\
 Change the directories accordingly.\
 Scale measurements hasn't been solved yet, will try to update later.\
